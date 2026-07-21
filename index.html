@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday Boyfieee ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- INTRO SCREEN -->
+
+    <section id="intro" class="screen">
+
+        <div class="hearts">♡ ♥ ♡ ♥ ♡</div>
+
+        <h1>Happy Birthday,<br>Boyfieeee! 🎂❤️</h1>
+
+        <p>
+            I made a little something for you...
+        </p>
+
+        <button onclick="openGift()">
+            Open Your Surprise 🎁
+        </button>
+
+    </section>
+
+
+    <!-- MAIN MENU -->
+
+    <section id="menu" class="screen hidden">
+
+        <h1>For My Favorite Person ❤️</h1>
+
+        <p>
+            Pick something to open...
+        </p>
+
+        <div class="cards">
+
+            <div class="card" onclick="showSection('letter')">
+                💌
+                <span>Open My Letter</span>
+            </div>
+
+            <div class="card" onclick="showSection('memories')">
+                📸
+                <span>Our Memories</span>
+            </div>
+
+            <div class="card" onclick="showSection('lore')">
+                😂
+                <span>Our Lore</span>
+            </div>
+
+            <div class="card" onclick="showSection('coupons')">
+                🎁
+                <span>Birthday Coupons</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- LETTER -->
+
+    <section id="letter" class="content-section hidden">
+
+        <button class="back" onclick="goBack()">← Back</button>
+
+        <div class="letter">
+
+            <h1>Dear Boyfieee ❤️</h1>
+
+            <p>
+                Happy Birthday to my favorite idiot. 😭❤️
+            </p>
+
+            <p>
+                I know we haven't been together for very long,
+                but somehow you've already become such an important
+                part of my life.
+            </p>
+
+            <p>
+                Thank you for listening to me, putting up with my
+                overthinking and, most importantly, surviving my
+                kaleshi moods. 😂
+            </p>
+
+            <p>
+                I hope this year brings you everything you want
+                and that you stay happy and healthy.
+            </p>
+
+            <p>
+                And one day, I hope I get to celebrate your birthday
+                with you in person. ❤️
+            </p>
+
+            <h3>
+                Love,<br>
+                Your Kaleshi Girlfriend 💗
+            </h3>
+
+        </div>
+
+    </section>
+
+
+    <!-- MEMORIES -->
+
+    <section id="memories" class="content-section hidden">
+
+        <button class="back" onclick="goBack()">← Back</button>
+
+        <h1>Our Little Memories 📸</h1>
+
+        <div class="gallery">
+
+            <div class="photo">
+                📷
+                <p>Our first memory</p>
+            </div>
+
+            <div class="photo">
+                📷
+                <p>Our favorite moment</p>
+            </div>
+
+            <div class="photo">
+                📷
+                <p>More memories to come ❤️</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- LORE -->
+
+    <section id="lore" class="content-section hidden">
+
+        <button class="back" onclick="goBack()">← Back</button>
+
+        <h1>The Captain Jio Lore 🚢</h1>
+
+        <div class="timeline">
+
+            <p>🏏 14 May — IPL became our excuse to talk.</p>
+
+            <p>❤️ 10 June — "Do you love me?"</p>
+
+            <p>😭 "That... that..."</p>
+
+            <p>📅 10-6-26 — Officially us.</p>
+
+            <p>📱 The never-ending network problems.</p>
+
+            <p>👖 The skinny jeans investigation.</p>
+
+            <p>🩴 The Crocs controversy.</p>
+
+            <p>❤️ And everything that's happened since.</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- COUPONS -->
+
+    <section id="coupons" class="content-section hidden">
+
+        <button class="back" onclick="goBack()">← Back</button>
+
+        <h1>Birthday Coupons 🎁</h1>
+
+        <p>Redeem these whenever we finally meet. ❤️</p>
+
+        <div class="coupon-container">
+
+            <div class="coupon">
+                🛍️
+                <h3>One Shopping Date</h3>
+                <p>Styling session included. Skinny jeans not guaranteed.</p>
+            </div>
+
+            <div class="coupon">
+                🤗
+                <h3>One Big Hug</h3>
+                <p>Valid whenever we finally meet.</p>
+            </div>
+
+            <div class="coupon">
+                💋
+                <h3>One Forehead Kiss</h3>
+                <p>Redeemable in person.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
