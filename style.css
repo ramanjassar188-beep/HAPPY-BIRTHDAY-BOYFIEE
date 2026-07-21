@@ -4,148 +4,542 @@
     padding: 0;
 }
 
+
 body {
+
     font-family: Georgia, serif;
-    background: linear-gradient(135deg, #ffe4ec, #fff5f8);
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffe4ec,
+            #fff5f8
+        );
+
     color: #5b3b45;
+
     min-height: 100vh;
+
 }
+
 
 .screen,
 .content-section {
+
     min-height: 100vh;
+
     padding: 40px 20px;
+
     display: flex;
+
     flex-direction: column;
+
     justify-content: center;
+
     align-items: center;
+
     text-align: center;
+
 }
+
 
 h1 {
+
     font-size: 3rem;
+
     margin-bottom: 20px;
+
 }
+
 
 p {
+
     font-size: 1.1rem;
+
     line-height: 1.8;
+
     max-width: 650px;
+
     margin: 10px auto;
+
 }
+
 
 button {
+
     border: none;
+
     padding: 15px 30px;
+
     margin-top: 25px;
+
     border-radius: 30px;
+
     background: #d96b8b;
+
     color: white;
+
     font-size: 1rem;
+
     cursor: pointer;
+
     transition: 0.3s;
+
 }
+
 
 button:hover {
+
     transform: scale(1.08);
+
 }
+
 
 .hearts {
+
     font-size: 2rem;
+
     margin-bottom: 30px;
+
     letter-spacing: 15px;
+
 }
+
 
 .hidden {
+
     display: none !important;
+
 }
+
+
+/* MAIN MENU */
 
 .cards {
+
     display: grid;
-    grid-template-columns: repeat(2, 200px);
+
+    grid-template-columns:
+        repeat(2, 200px);
+
     gap: 25px;
+
     margin-top: 30px;
+
 }
+
 
 .card {
-    background: rgba(255, 255, 255, 0.7);
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.7
+        );
+
     padding: 35px 20px;
+
     border-radius: 25px;
+
     font-size: 3rem;
+
     cursor: pointer;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+
+    box-shadow:
+        0 10px 30px
+        rgba(
+            0,
+            0,
+            0,
+            0.1
+        );
+
     transition: 0.3s;
+
 }
+
 
 .card:hover {
-    transform: translateY(-10px);
+
+    transform:
+        translateY(-10px)
+        scale(1.03);
+
 }
+
 
 .card span {
+
     display: block;
+
     font-size: 1rem;
+
     margin-top: 15px;
+
 }
+
+
+/* LETTER */
 
 .letter {
+
     background: #fffaf0;
+
     padding: 45px;
+
     max-width: 700px;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 10px 30px
+        rgba(
+            0,
+            0,
+            0,
+            0.1
+        );
+
 }
+
+
+.letter h2 {
+
+    margin-top: 25px;
+
+}
+
+
+.letter h3 {
+
+    margin-top: 25px;
+
+    line-height: 1.6;
+
+}
+
+
+/* GALLERY */
 
 .gallery {
+
     display: flex;
+
     gap: 30px;
+
     flex-wrap: wrap;
+
     justify-content: center;
+
     margin-top: 30px;
+
 }
+
 
 .photo {
+
     width: 220px;
+
     height: 250px;
+
     background: white;
+
     padding: 20px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    transform: rotate(-2deg);
+
+    box-shadow:
+        0 8px 20px
+        rgba(
+            0,
+            0,
+            0,
+            0.1
+        );
+
+    transform:
+        rotate(-2deg);
+
 }
+
+
+/* LORE */
 
 .timeline {
-    background: rgba(255,255,255,0.7);
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.7
+        );
+
     padding: 30px;
+
     border-radius: 25px;
+
     max-width: 700px;
+
 }
+
+
+/* LOVE CARDS */
+
+.love-container {
+
+    display: flex;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    max-width: 900px;
+
+    margin-top: 30px;
+
+}
+
+
+.love-card {
+
+    background: white;
+
+    padding: 30px;
+
+    width: 260px;
+
+    border-radius: 25px;
+
+    font-size: 2.5rem;
+
+    box-shadow:
+        0 10px 25px
+        rgba(
+            0,
+            0,
+            0,
+            0.1
+        );
+
+    transition: 0.3s;
+
+}
+
+
+.love-card:hover {
+
+    transform:
+        translateY(-8px)
+        rotate(-1deg);
+
+}
+
+
+.love-card h3 {
+
+    font-size: 1.3rem;
+
+    margin-top: 15px;
+
+}
+
+
+.love-card p {
+
+    font-size: 1rem;
+
+}
+
+
+/* BOUQUET */
+
+.flowers {
+
+    margin-top: 40px;
+
+    font-size: 4rem;
+
+    animation:
+        bloom 1s
+        ease-in-out;
+
+}
+
+
+@keyframes bloom {
+
+    0% {
+
+        transform:
+            scale(0);
+
+        opacity: 0;
+
+    }
+
+    100% {
+
+        transform:
+            scale(1);
+
+        opacity: 1;
+
+    }
+
+}
+
+
+/* FUTURE GIFTS */
+
+.gift-container {
+
+    display: flex;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    max-width: 900px;
+
+    margin-top: 30px;
+
+}
+
+
+.gift-card {
+
+    background: white;
+
+    padding: 30px;
+
+    width: 250px;
+
+    border-radius: 25px;
+
+    font-size: 2.5rem;
+
+    box-shadow:
+        0 10px 25px
+        rgba(
+            0,
+            0,
+            0,
+            0.1
+        );
+
+    transition: 0.3s;
+
+}
+
+
+.gift-card:hover {
+
+    transform:
+        translateY(-8px);
+
+}
+
+
+.gift-card h3 {
+
+    font-size: 1.3rem;
+
+    margin-top: 15px;
+
+}
+
+
+.gift-card p {
+
+    font-size: 1rem;
+
+}
+
+
+/* COUPONS */
 
 .coupon-container {
+
     display: flex;
+
     gap: 20px;
+
     flex-wrap: wrap;
+
     justify-content: center;
+
 }
 
+
 .coupon {
+
     background: white;
+
     padding: 30px;
+
     width: 250px;
+
     border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+
+    box-shadow:
+        0 10px 25px
+        rgba(
+            0,
+            0,
+            0,
+            0.1
+        );
+
 }
+
+
+/* MOBILE */
 
 @media (max-width: 600px) {
 
+
     h1 {
+
         font-size: 2.2rem;
+
     }
+
 
     .cards {
-        grid-template-columns: 1fr 1fr;
+
+        grid-template-columns:
+            1fr 1fr;
+
     }
 
+
     .card {
-        padding: 25px 10px;
+
+        padding:
+            25px
+            10px;
+
     }
+
+
+    .love-card,
+    .gift-card {
+
+        width: 90%;
+
+    }
+
+
+    .letter {
+
+        padding: 30px 20px;
+
+    }
+
 
 }
